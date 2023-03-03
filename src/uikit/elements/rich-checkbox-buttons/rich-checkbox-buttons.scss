@@ -1,0 +1,19 @@
+.rich-checkbox-buttons {
+  &__title {
+    @extend %font-h3;
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__item-label {
+  }
+  &__item-body {
+  }
+  .item-checkbox__text {
+    @extend %font-rich-checkbox-buttons-title;
+  }
+  .item-checkbox__subtext {
+    @extend %font-rich-checkbox-buttons-subtext;
+  }
+}

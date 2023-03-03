@@ -1,0 +1,152 @@
+.find-room {
+  @include mb(20px);
+
+  &__title {
+    @extend %font-h1;
+  }
+  .card__item:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  .dropdown__input {
+    color: $dark-75;
+  }
+}
+
+.air-datepicker-calendar {
+  &__dropdown-lists {
+  }
+
+  &__dropdown {
+  }
+
+  &__menu {
+  }
+}
+.js-air-datepicker-calendar {
+  &__menu {
+  }
+}
+.js-dropdown {
+  &__button {
+  }
+
+  &__menu {
+  }
+}
+.dropdown {
+  &__label {
+  }
+
+  &__label-text {
+  }
+
+  &__field {
+  }
+
+  &__input {
+  }
+
+  &__arrow {
+  }
+
+  &__menu {
+  }
+}
+.field {
+  &__label {
+  }
+
+  &__label-text {
+  }
+
+  &__input {
+  }
+}
+.air-datepicker {
+}
+.-inline- {
+}
+.air-datepicker--pointer {
+}
+.air-datepicker--navigation {
+}
+.air-datepicker-nav {
+}
+.air-datepicker-nav--action {
+}
+.air-datepicker-nav--title {
+}
+.air-datepicker--content {
+}
+.air-datepicker-body {
+}
+.-days- {
+}
+.air-datepicker-body--day-names {
+}
+.air-datepicker-body--day-name {
+}
+.-weekend- {
+}
+.air-datepicker-body--cells {
+}
+.air-datepicker-cell {
+}
+.-day- {
+}
+.-other-month- {
+}
+.-selected- {
+}
+.-range-from- {
+}
+.-in-range- {
+}
+.-range-to- {
+}
+.air-datepicker--buttons {
+}
+.air-datepicker-buttons {
+}
+.air-datepicker-button {
+}
+.custom-apply-classname {
+}
+.iq-dropdown {
+  &__items {
+  }
+
+  &__buttons {
+  }
+
+  &__button {
+  }
+
+  &__button--disabled {
+  }
+}
+.iq-dropdown-item {
+  &__text {
+  }
+
+  &__quantity-control {
+  }
+
+  &__quantity-button {
+  }
+
+  &__quantity-button--disabled {
+  }
+
+  &__count {
+  }
+}
+.type-h3 {
+}
+.button-arrow {
+  &__text {
+  }
+
+  &__arrow {
+  }
+}

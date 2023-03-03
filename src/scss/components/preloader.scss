@@ -1,0 +1,21 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	&__image {
+		transition: 2s;
+		transform: translate(-80vw, 80vh);
+	}
+}
+
+.preloader.preloader--hide {
+	transition: 0.3s;
+	opacity: 0;
+}

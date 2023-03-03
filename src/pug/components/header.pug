@@ -1,0 +1,21 @@
+header.header
+	.container
+		.header__body
+			a.header__logo(href=data.header.links.logo)
+				img.header__logo-image(src=`${baseDir}images/sprites/png/Logo.png`, alt="logo-image")
+
+			button.header__burger.btn.js-burger(type="button")
+				span
+				span
+				span
+
+			nav.header__menu
+				.header__list
+					each object, key in data.header.menu
+						a.header__link.js-to-anchor(
+							href=object.url
+							data-link=key
+						)
+							!= object.name
+				//- img(src=`${imgPng}processing.png`, alt="processing")
+				img.header__menu-image(src=`${baseDir}images/sprites/png/processing.png`, alt="processing")

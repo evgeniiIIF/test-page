@@ -1,0 +1,14 @@
+.expandable-checkbox-list {
+  &__field {
+    cursor: pointer;
+  }
+  &__title {
+    @extend %font-h3;
+  }
+  &__arrow {
+  }
+  &__menu {
+  }
+  &__menu-item {
+  }
+}

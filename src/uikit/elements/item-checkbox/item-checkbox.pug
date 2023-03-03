@@ -1,0 +1,21 @@
+mixin item-checkbox(opts)
+  .item-checkbox
+    label.item-checkbox__label
+      input(type="checkbox" checked=opts.isChecked)
+      span.item-checkbox__pseudo-flag
+        span.item-checkbox__icon
+          +svg({
+            id:'#tick',
+            width: 14,
+            height: 10,
+          })
+      .item-checkbox__content
+        span.item-checkbox__text= opts.text
+        if(opts.subtext)
+          span.item-checkbox__subtext= opts.subtext
+
+//- +item-checkbox({
+//-   isChecked: false
+//-   text:'Завтрак', 
+//-   subtext:'Подтекст', 
+//- },)

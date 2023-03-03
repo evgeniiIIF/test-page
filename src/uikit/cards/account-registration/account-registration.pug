@@ -1,0 +1,83 @@
+mixin account-registration(opts)
+  form(action="#").account-registration.card
+    .account-registration__item
+      h3.account-registration__title= opts.title
+    .account-registration__item
+      .account-registration__group
+        +field(opts.fieldName)
+        +field(opts.fieldSurname)
+        +radio-buttons(opts.radioButtons)
+    .account-registration__item
+      +masked-text-field(opts.maskedTextField)
+    .account-registration__item
+      .account-registration__group
+        +field(opts.fieldEmail)
+        +field(opts.fieldPassword)
+        +toggle-buttons(opts.toggleButton)
+    .account-registration__item.account-registration__button
+      +button-arrow(opts.buttonArrow)
+    .account-registration__item
+      .account-registration__space-between
+        p.account-registration__account-actions-text Уже есть аккаунт на Toxin
+        +button-border-gradient(opts.buttonBorder)
+
+//- +account-registration({
+//-   title: 'Регистрация аккаунта',
+//-   fieldName: {
+//-     label: false,
+//-     type: 'text',
+//-     name: 'name',
+//-     placeholder: 'Имя',
+//-     tabindex: 1,
+//-     required: true,
+//-   },
+//-   fieldSurname: {
+//-     label: false,
+//-     type: 'text',
+//-     name: 'surname',
+//-     placeholder: 'Фамилия',
+//-     tabindex: 1,
+//-     required: true,
+//-   },
+//-   radioButtons: {
+//-     title: false,
+//-     radio__1: 'Мужчина', 
+//-     radio__2: 'Женщина', 
+//-     name: 'radio'
+//-   },
+//-   maskedTextField: {
+//-     label: 'дата рождения',
+//-     type: 'text',
+//-     name: 'birthday',
+//-     placeholder: 'ДД.ММ.ГГГГ',
+//-     tabindex: 1,
+//-     required: true,
+//-   },
+//-   fieldEmail: {
+//-     label: 'данные для входа в сервис',
+//-     type: 'email',
+//-     name: 'email',
+//-     placeholder: 'Email',
+//-     tabindex: 1,
+//-     required: true,
+//-   },
+//-   fieldPassword: {
+//-     label: false,
+//-     type: 'password',
+//-     name: 'password',
+//-     placeholder: 'Пароль',
+//-     tabindex: 1,
+//-     required: true,
+//-   },
+//-   toggleButton: {
+//-     title: false, 
+//-     text: 'Получать спецпредложения'
+//-   },
+//-   buttonArrow: {
+//-     text: 'перейти к оплате',
+//-   },
+//-   accountActionsText: 'Уже есть аккаунт на Toxin',
+//-   buttonBorder: {
+//-     text: 'войти',
+//-   }
+//- })

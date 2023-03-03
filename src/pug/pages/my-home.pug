@@ -1,0 +1,145 @@
+include ../components/preloader.pug
+
+main.my-home
+	section.info(id='resume')
+		.container
+			.info__body
+				.info__content
+					.info__head
+						h1.info__name Евгений
+						H2.info__profession Front-end разработчик
+					p.info__text Как разработчик, я высоко ценю способность воплотить видение дизайнера в жизнь, что считаю очень полезным для бизнеса. Я получаю огромное удовлетворение, наблюдая за работой от идеи до дизайна, особенно когда она появляется в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
+				.info__contacts
+					a.info__mail(href="mailto:pro100.sto@yandex.ru") pro100.sto@yandex.ru
+					a.info__phone(href='tel:+79887516613') +7 (909) 763-04-41
+					p.info__city г.Ставрополь
+					.info__social.social
+						a.social__icon(href="https://facebook.com")
+							img(src=`${baseDir}images/sprites/svg/facebook.svg`, alt="facebook")
+						a.social__icon(href="https://vk.com/id175892073")
+							img(src=`${baseDir}images/sprites/svg/vk.svg`, alt="vk")
+						a.social__icon(href="https://t.me/E888VG")
+							img(src=`${baseDir}images/sprites/svg/tg.svg`, alt="tg")
+	section.about(id='about')
+		.container
+			.about__body
+				.about__experience.experience
+					h4.experience__title Опыт работы
+					ul.experience__list
+						li.experience__item
+							+item-experience({
+								date: 'Июль 2019',
+								positionText: 'Freelance Designer',
+								positionImage: `${baseDir}images/sprites/svg/group_one.svg`,
+								companyLocation: 'Netherlands, Worldwide',
+								text:'Available for a project or job in UX/UI, Visual and Product design.',
+								links: ['Commercial tryouts','Personal projects'],
+							})
+						li.experience__item
+							+item-experience({
+								date: 'Январь 2017 - Сентябрь 2018',
+								positionText: 'Digital Designer',
+								positionImage: `${baseDir}images/sprites/svg/group_2.svg`,
+								company:{
+									companyName:"J Creative Solutions",
+									companyImage: `${baseDir}images/sprites/png/jcs.png`,
+									companyLocation: 'Netherlands, Worldwide',
+								},
+								text:'Created visuals for digital marketing channels such as social media, promo web and online ads. Developed visual language from scratch or following the branding guidelines. Designed presentations for clients and indoor purposes.',
+								links: ['Agency projects'],
+							})
+						li.experience__item
+							+item-experience({
+								date: 'Март 2014 - Февраль 2017',
+								positionText: 'SEO Specialist → Lead SEO Specialist',
+								positionImage: `${baseDir}images/sprites/svg/group_3.svg`,
+								company:{
+									companyName:"OZ.by",
+									companyImage: `${baseDir}images/sprites/png/ez.png`,
+									companyLocation: 'Online bookstore in Minsk, Belarus',
+								},
+								text:'Improved website performance and user experience of the biggest online bookstore OZ in Belarus, being a part of the marketing team, I interpreted Google Analytics data to IT, content and marketing colleagues. Advised on tech and content optimization strategy, automated processes, provided reports, increased organic traffic up to 150%.',
+								links: ['Annual company report 2016'],
+							})
+						li.experience__item
+							+item-experience({
+								date: 'Март 2014 - Февраль 2017',
+								positionText: 'SEO Specialist → Lead SEO Specialist',
+								positionImage: `${baseDir}images/sprites/svg/group_4.svg`,
+								company:{
+									companyName:"OZ.by",
+									companyImage: `${baseDir}images/sprites/png/21vek.png`,
+									companyLocation: 'E-commerce store in Minsk, Belarus',
+								},
+								text:'Added and modified the product information, prepared images and text for the website, developed categories filters, ensure all info is correct in the catalogue with the goal of improving online shopper experience.',
+							})
+						li.experience__item
+							+item-experience({
+								date: 'Август 2011 - Ноябрь 2014',
+								positionText: 'Software Support Engineer',
+								positionImage: `${baseDir}images/sprites/svg/group_5.svg`,
+								company:{
+									companyName:"Integral",
+									companyImage: `${baseDir}images/sprites/png/n.png`,
+									companyLocation: 'Microelectronics factory in Minsk, Belarus',
+								},
+								text:'Supported retail accounting system LS Trade, troubleshoot technical problems.',
+							})
+				.about__person-image
+					picture
+						<source srcset='../../images/sprites/png/person-one@2x.png' media="(min-width:1024px)">
+						img(src=`${baseDir}images/sprites/png/person-one.png`, alt="person")
+				.about__education.education
+					h3.education__title Образование
+					ul.education__list
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ1.png`, alt="image")
+							h6.item-education__title Interface Design: Web & Mobile
+							p.item-education__text IT-Academy, 2020
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ2.png`, alt="image")
+							h6.item-education__title Fundamentals of Usability
+							p.item-education__text Skillshare, Oct 2018
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ3.png`, alt="image")
+							h6.item-education__title CG Artist
+							p.item-education__text Polygon CG School, May-Sep 2017
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ4.png`, alt="image")
+							h6.item-education__title Graphic Design
+							p.item-education__text Belarusian State Academy of Arts, 2015 - 2017 Postgraduate Diploma
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ5.png`, alt="image")
+							h6.item-education__title SEO Specialist
+							p.item-education__text ARTOX Media, Jun-Aug 2012
+						li.education__item.item-education
+							img(src=`${baseDir}images/sprites/png/educ6.png`, alt="image")
+							h6.item-education__title Information Technology Software
+							p.item-education__text Belarusian State University of Informatics and Radioelectronics, 2011 - 2015 Bachelor’s degree
+							p.item-education__text Polotsk State Economic College, 2007 - 2011 Associate’s degree
+	section.skils(id='skils')
+		.container
+			.skils__body
+				h4.skils__title Навыки
+				ul.skils__list
+					li.skils__item.item-skils
+						h6.item-skils__title Adobe Creative Suite
+						p.item-skils__text Photoshop, Illustrator, InDesign, XD, After Effects
+					li.skils__item.item-skils
+						h6.item-skils__title Prototyping
+						p.item-skils__text Sketch, Figma, InVision, Marvel, Principle, Balsamiq
+					li.skils__item.item-skils
+						h6.item-skils__title Additional
+						p.item-skils__text HTML, CSS, Google Analytics, Keynote, Miro
+					li.skils__item.item-skils
+						h6.item-skils__title Languages
+						p.item-skils__text Conversational English and Native Russian
+			.skils__image
+				picture
+					source(srcset=`${baseDir}images/sprites/png/arm@2x.png` media="(min-width:1024px)")
+					img(src=`${baseDir}images/sprites/png/arm.png`, alt="arm")
+.scroll-up
+	canvas.scroll-up__canvas(width='52px' height='52px')
+	.scroll-up__image
+		img(src=`${baseDir}images/sprites/svg/button-scroll-up.svg`, alt="")
+

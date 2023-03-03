@@ -1,0 +1,14 @@
+mixin signing-in(opts)
+  .signing.card
+    .signing__item
+      .signing__title.type-h1= (opts.title)
+    .signing__item
+      .signing__group
+        +field(opts.fieldName)
+        +field(opts.fieldSurname)
+    .signing__item.signing__button-arrow
+      +button-arrow(opts.buttonArrow)
+    .signing__item
+      .signing__space-between
+        p.signing__account-actions-text.type-body= (opts.accountActionsText)
+        +button-border-gradient(opts.buttonBorder)

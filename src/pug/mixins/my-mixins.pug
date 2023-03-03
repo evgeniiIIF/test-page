@@ -1,0 +1,20 @@
+mixin item-experience(opts)
+	.item-experience
+		.item-experience__date= opts.date
+		.item-experience__position
+			p.item-experience__position-text=opts.positionText
+			if(opts.positionImage)
+				img.item-experience__position-image(src=opts.positionImage, alt="image")
+		.item-experience__place
+			if(opts.company)
+				.item-experience__place-company
+					img.item-experience__place-company-image(src=opts.company.companyImage, alt="company")
+					.item-experience__place-company-body
+						p.item-experience__place-company-name= opts.company.companyName
+						p.item-experience__place-company-location= opts.company.companyLocation
+			else
+				p.item-experience__place-company-location= opts.companyLocation
+		p.item-experience__text=opts.text
+		if(opts.links)
+			each link in opts.links
+				a.item-experience__link(href="https://changeme")= link

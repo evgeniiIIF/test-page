@@ -1,0 +1,129 @@
+include ../../uikit/elements/elements-page/elements-page.pug
+include ../../uikit/tables/tables-page/tables-page.pug
+include ../../uikit/cards/cards-page/cards-page.pug
+
+
+
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title #{title}
+		meta(name="description", content=description)
+		block head
+	body(class=pageClass)
+		include ../../sys/img/svg-sptites/svg-sptites.svg
+		.wrapper
+			+header({
+				floatingBlock: false,
+				logo: {
+					href: 'index.html',
+					logoIcon: require("../../assets/img/logo/logo-toxin.png"),
+					logoText: require("../../assets/img/logo/TOXIN.png"),
+				},
+				menuItems: [
+					
+
+
+
+					{text: 'О нас', href: "http://processing", submenuItems: false},
+					
+					{text: 'Услуги', href: "http://processing24", submenuItems: [
+
+						{text: 'submenuItem', href: "http://1", submenuItems: false},
+						
+						{text: 'submenuItem', href: "http://2", submenuItems: [
+
+							{text: 'submenuItem', href: "http://1", submenuItems: false},
+							{text: 'submenuItem', href: "http://2", submenuItems: false},
+							{text: 'submenuItem', href: "http://3", submenuItems: false},
+						]},
+
+						{text: 'submenuItem', href: "http://3", submenuItems: false},
+					]},
+
+					{text: 'Вакансии', href: "http://Вакансии", submenuItems: [
+
+						{text: 'submenuItem', href: "http://1", submenuItems: false},
+						{text: 'submenuItem', href: "http://2", submenuItems: false},
+						{text: 'submenuItem', href: "http://3", submenuItems: false},
+					]},
+
+					{text: 'Новости', href: "http://processing24", submenuItems: false},
+
+					{text: 'Соглашения', href: "http://processing24", submenuItems: [
+						
+						{text: 'submenuItem', href: "http://1", submenuItems: false},
+						{text: 'submenuItem', href: "http://2", submenuItems: false},
+						{text: 'submenuItem', href: "http://3", submenuItems: false},
+					]},
+				],
+			})
+			block content
+			+footer({
+				logo:{
+					href: 'index.html',
+					logoIcon: require("../../assets/img/logo/logo-toxin.png"),
+					logoText: require("../../assets/img/logo/TOXIN.png"),
+				},
+				blockLogoText: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+				navItems:[
+					{
+						title: "навигация", 
+						links: [
+							{href: 'http://chagneme', text: 'О нас'},
+							{href: 'http://chagneme', text: 'Новости'},
+							{href: 'http://chagneme', text: 'Служба поддержки'},
+							{href: 'http://chagneme', text: 'Услуги'},
+						]
+					},
+					{
+						title: "о нас", 
+						links: [
+							{href: 'http://chagneme', text: 'О сервисе'},
+							{href: 'http://chagneme', text: 'Наша команда'},
+							{href: 'http://chagneme', text: 'Вакансии'},
+							{href: 'http://chagneme', text: 'Инвесторы'},
+						]
+					},
+					{
+						title: "Служба поддержки", 
+						links: [
+							{href: 'http://chagneme', text: 'Соглашения'},
+							{href: 'http://chagneme', text: 'Сообщества'},
+							{href: 'http://chagneme', text: 'Связь с нами'},
+						]
+					}
+				],
+				subscribe: {
+					title: 'Подписка',
+					text: 'Получайте специальные предложения и новости сервиса',
+					field: {
+						js: false, 
+						dropdownId: false,
+						label: false, 
+						type: 'email', 
+						placeholder: 'Email', 
+						tabindex: 1,
+						arrowSvg: {
+							id:'#arrow-forward',
+							width: 17,
+							height: 18,
+						}
+					}
+				},
+				copy:{
+					text: 'Copyright © 2018 Toxin отель. Все права защищены.',
+					icons:[
+						{src: require('../../assets/img/social/facebook.svg'), alt: 'facebook'},
+						{src: require('../../assets/img/social/instagramm.svg'), alt: 'instagramm'},
+						{src: require('../../assets/img/social/twiter.svg'), alt: 'twiter'},
+					]
+				}
+			})
+			
+		block scripts

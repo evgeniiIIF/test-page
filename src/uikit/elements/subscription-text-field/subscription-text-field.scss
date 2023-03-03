@@ -1,0 +1,20 @@
+.subscription-text-field {
+  & .dropdown__input {
+    cursor: auto;
+    &:hover {
+      & ~ .dropdown__arrow {
+        opacity: 1;
+        svg {
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+  & .dropdown__arrow {
+    cursor: pointer;
+    z-index: 1;
+    & svg {
+      fill: $dark-25;
+    }
+  }
+}
