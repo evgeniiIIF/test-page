@@ -53,7 +53,7 @@
 	}
 	&__list {
 		width: 100%;
-		text-align: center;
+		// text-align: center;
 	}
 
 	&__link {
@@ -85,6 +85,12 @@
 		@include active {
 			color: $color-black;
 		}
+	}
+	&__link--active {
+		display: inline-block;
+		border-bottom: 2px solid #000;
+		opacity: 1;
+		color: rgba(0, 0, 0, 1);
 	}
 
 	&__burger {
@@ -160,7 +166,7 @@
 		padding: 0;
 		min-height: auto;
 		&:not(:last-child) {
-			border-bottom: none;
+			// border-bottom: none;
 		}
 
 		&:first-child {
